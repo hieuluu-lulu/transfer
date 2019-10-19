@@ -34,13 +34,6 @@ using namespace std;
 			}
 			return result;
 		}
-		void output()
-		{
-			while(f!=r)
-			{
-				cout << Dequeue();
-			}
-		}
 		void transfer() 
 		{	
 			int a = 250;

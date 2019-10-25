@@ -9,7 +9,8 @@ using namespace std;
 char S1[250], S2[250];
 int a = 0, b = 0, c = 0, t;
 
-class Queues {
+class Queues 
+{
 	char buffer[50];
 	public:
 	void enqueue(int x) 
@@ -40,7 +41,8 @@ class Queues {
 		while (t > 0) 
 		{
 			enqueue(t);
-			while (x > 0) {
+			while (x > 0) 
+			{
 				S2[c] = dequeue();
 				c++;
 				x--;
@@ -48,27 +50,32 @@ class Queues {
 			}
 			cout << "\n" << i << "---Destination String S2:\n" << S2;
 			i++;
-			if (t > 50) {
+			if (t > 50) 
+			{
 				x = 50;
 			}
-			else {
+			else 
+			{
 				x = t;
 			}
 		}
 	}
 };
 
-int main() {
+int main() 
+{
 	Queues Q;
 	cout << "Insert Source String S1 (MAX 250 CHARACTERS): ";
 	scanf("%[^\n]%*c", S1);
 	t = strlen(S1);
 	try 
 	{
-		if (t > 0) {
+		if (t > 0) 
+		{
 			Q.transfer();
 		}
-		else {
+		else 
+		{
 			cout << "\nERROR: Please Enter Data";
 		}
 	}
